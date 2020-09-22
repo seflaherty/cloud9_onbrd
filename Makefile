@@ -1,5 +1,5 @@
 setup:
-	apt-get install python3-venv
+	sudo apt-get install python3-venv
 
 install:
 	pip install --upgrade pip &&\
