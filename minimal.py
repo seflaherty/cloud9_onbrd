@@ -1,5 +1,5 @@
 def minfunc():
-    return f'1'
+    return 1
     
     
 print(minfunc())
