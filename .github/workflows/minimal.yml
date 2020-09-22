@@ -12,9 +12,11 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Run Makefile
+    - name: Run make setup
       run: |
         make setup
+    - name: Prepare venv
         python3 -m venv venv
         . venv/bin/activate
+    - name: Run make install
         make install

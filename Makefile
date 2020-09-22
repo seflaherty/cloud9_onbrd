@@ -1,5 +1,5 @@
 setup:
-	python3 -m venv ~/.cloud9_onbrd
+	apt-get install python3-venv
 
 install:
 	pip install --upgrade pip &&\
