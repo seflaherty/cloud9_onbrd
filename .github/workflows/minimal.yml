@@ -11,12 +11,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
-     with:
-     fetch-depth: 1
-     - name: Run Makefile
-     env:
-     run: |
-      python3  -m venv venv
-      . venv/bin/activate
-      make install
+    - uses: actions/checkout@v2
+    - name: Run Makefile
+      run: |
+        python3  -m venv venv
+        . venv/bin/activate
+        make install
